@@ -51,6 +51,9 @@
               <td>{{ project.ssh_url_to_repo}}</td>
               <td>{{ project.owner.name }}</td>
               <td> {{ project.web_url }} </td>
+              <td>
+                <a href="/gitlab/{{ project.id }}">Ver commits</a>
+              </td>
           </tr>
           {% endfor %}
         </tbody>
